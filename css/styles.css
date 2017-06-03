@@ -133,10 +133,14 @@ body {
 			#tweet-controls div {
 				display: inline-block;
 			}
-			#char-count {
+			div #char-count {
 				font-size: 14px;
 				color: #999;
 				text-shadow: 0 1px 1px rgba(255,255,255,.75);
+				display: none;
+			}
+			#tweet-submit {
+				display: none;
 			}
 
 /* TWEET */
@@ -168,6 +172,7 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		display: none;
 	}
 		.tweet-actions ul {
 			list-style-type: none;
@@ -179,6 +184,15 @@ body {
 				cursor: pointer;
 				margin-right: 2px;
 			}
+
+			.tweet-actions .favorited {
+				display: inline-block;
+				font-size: 12px;
+				color: #d3d3d3;
+				cursor: pointer;
+				margin-right: 2px;
+			}
+
 
 	.icon {
 		color: #2FC2EF;
@@ -211,6 +225,7 @@ body {
 	.stats {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
+		display: none;
 	}
 		.stats, .stats div {
 			box-sizing: border-box;
@@ -246,6 +261,7 @@ body {
 			color: #999;
 			border-top: 1px solid #e8e8e8;
 			padding-top: 10px;
+			display: block;
 		}
 
 		.reply {
@@ -258,5 +274,4 @@ body {
 				top: 0;
 				left: 0;
 			}
-
 
